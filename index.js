@@ -3,6 +3,7 @@ import data from "./models.js";
 import dotenv from 'dotenv'
 
 dotenv.config();
+const channelID = "1277911512329224235";
 
 const client = new Client({
   intents: [
@@ -17,6 +18,7 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", async (message) => {
+  if(message.channel.id!==channelID) return "";
   if (message.author.bot) return "";
   if (message.content.endsWith("bish spongebob")) {
     message.react("😭") && message.reply(`this looks like ${data[1]}`);
@@ -30,8 +32,9 @@ client.on("messageCreate", async (message) => {
       content: "I think she is at Gym",
     });
   } else if (message.content.includes("jr")) {
+    const customEmoji = ":shoppingbag:";
     message.reply({
-      content: "He is prob staring at the screen 🤣",
+      content: `He is prob staring at the screen haha ${customEmoji}`,
     });
   } else if (message.content == "hi pial") {
     message.reply({
