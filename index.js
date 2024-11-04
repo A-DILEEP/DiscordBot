@@ -1,5 +1,4 @@
 import { Client, GatewayIntentBits, Message } from "discord.js";
-import data from "./models.js";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -76,6 +75,6 @@ client.on("messageCreate", async (message) => {
   }
 });
 
-client.login(
-  ""
-);
+// client.login(
+//   ""
+// );
