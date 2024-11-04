@@ -77,5 +77,5 @@ client.on("messageCreate", async (message) => {
 });
 
 client.login(
-  "MTI3NzkxMTg1MzUzNTU5MjQ3OQ.G92HXG.VzvZPPNHw26Y1Hus1JgPJrBLnDM0Aglm5RF5Zk"
+  ""
 );
