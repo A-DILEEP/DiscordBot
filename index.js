@@ -1,9 +1,9 @@
 import { Client, GatewayIntentBits, Message } from "discord.js";
 import data from "./models.js";
-import dotenv from 'dotenv'
+import dotenv from "dotenv";
 
 dotenv.config();
-const channelID = "1277911512329224235";
+const channelID = "1301871778221658152";
 
 const client = new Client({
   intents: [
@@ -18,27 +18,38 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", async (message) => {
-  if(message.channel.id!==channelID) return "";
+  //if (message.channel.id !== channelID) return "";
   if (message.author.bot) return "";
   if (message.content.endsWith("bish spongebob")) {
-    message.react("😭") && message.reply(`this looks like ${data[1]}`);
+    message.react("😭") && message.reply(`Dont be mean to me !`);
   }
   if (message.content == "what am i" || message.content == "what i am") {
     message.reply({
-      content: "You are a Human bish !",
+      content: "You are a Noob bish ! 😂 ",
     });
   } else if (message.content.includes("tdd")) {
     message.reply({
       content: "I think she is at Gym",
     });
   } else if (message.content.includes("jr")) {
-    const customEmoji = ":shoppingbag:";
     message.reply({
-      content: `He is prob staring at the screen haha ${customEmoji}`,
+      content: `He is prob staring at the screen haha`,
     });
-  } else if (message.content == "hi pial") {
+  } else if (message.content.includes("rave")) {
     message.reply({
-      content: "ahh crap is he online ?",
+      content: `are you calling the person who like toes ? 🤔`,
+    });
+  } else if (message.content.includes("jonny")) {
+    message.reply({
+      content: "Oh is that noob online ? ",
+    });
+  } else if (message.content.includes(":pan:")) {
+    message.reply({
+      content: "Go shove that pan in another place ",
+    });
+  } else if (message.content.includes("trix")) {
+    message.reply({
+      content: "she is a kidnapper 😨 ",
     });
   }
 
@@ -52,7 +63,7 @@ client.on("messageCreate", async (message) => {
         messageReplied.author.id === client.user.id &&
         message.content == "boo"
       ) {
-        await message.reply("Yeah it looks workiing ");
+        await message.reply("👻👻");
       } else if (
         messageReplied.author.id === client.user.id &&
         message.content.includes("which screen")
@@ -65,4 +76,6 @@ client.on("messageCreate", async (message) => {
   }
 });
 
-client.login(process.env.TOKEN);
+client.login(
+  "MTI3NzkxMTg1MzUzNTU5MjQ3OQ.G92HXG.VzvZPPNHw26Y1Hus1JgPJrBLnDM0Aglm5RF5Zk"
+);
