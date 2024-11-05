@@ -17,7 +17,7 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", async (message) => {
-  //if (message.channel.id !== channelID) return "";
+  if (message.channel.id !== channelID) return "";
   if (message.author.bot) return "";
   if (message.content.endsWith("bish spongebob")) {
     message.react("😭") && message.reply(`Dont be mean to me !`);
@@ -49,6 +49,10 @@ client.on("messageCreate", async (message) => {
   } else if (message.content.includes("trix")) {
     message.reply({
       content: "she is a kidnapper 😨 ",
+    });
+  } else if (message.content == "boo" || message.content == "Boo") {
+    message.reply({
+      content: "👻🐝",
     });
   }
 
