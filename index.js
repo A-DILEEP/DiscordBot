@@ -1,9 +1,12 @@
-import { Client, GatewayIntentBits, Message } from "discord.js";
+import { Client, GatewayIntentBits, Message, SlashCommandBuilder } from "discord.js";
 import dotenv from "dotenv";
-
 dotenv.config();
-const channelID = "1301871778221658152";
-
+const {
+  CHANNEL_ID: channelID,
+  CLIENT_ID: clientId,
+  GUILD_ID: guildId,
+  TOKEN: token,
+} = process.env;
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -79,6 +82,4 @@ client.on("messageCreate", async (message) => {
   }
 });
 
-// client.login(
-//   ""
-// );
+client.login(token);
