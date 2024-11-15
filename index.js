@@ -9,10 +9,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 dotenv.config();
 
-const {
-  CLIENT_ID: clientId,
-  TOKEN: token,
-} = process.env;
+const { CLIENT_ID: clientId, TOKEN: token } = process.env;
 
 const client = new Client({
   intents: [
@@ -40,7 +37,7 @@ async function loadCommands() {
 
   try {
     console.log("Started refreshing application (/) commands.");
-    await rest.put(Routes.applicationCommands(clientId),{
+    await rest.put(Routes.applicationCommands(clientId), {
       body: commands,
     });
     console.log("Successfully reloaded application (/) commands.");
@@ -53,7 +50,6 @@ client.once("ready", () => {
   console.log("Bot is online");
   loadCommands();
 });
-
 
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
@@ -73,7 +69,6 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
-
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
@@ -87,17 +82,26 @@ client.on("messageCreate", async (message) => {
   } else if (message.content.includes("cry")) {
     await message.reply("<:crying:1306851636735643729>");
   } else if (message.content.includes("jr")) {
-    await message.reply("He is prob staring at the screen haha.");
+    await message.reply("He is prob staring at the screen haha");
   } else if (message.content.includes("rave")) {
     await message.reply("Are you calling the person who likes toes? 🤔");
   } else if (message.content.includes("jonny")) {
     await message.reply("Oh, is that noob online?");
   } else if (message.content.includes(":pan:")) {
-    await message.reply("Go shove that pan in another place.");
+    await message.reply("Go shove that pan in another place");
   } else if (message.content.includes("trix")) {
-    await message.reply("She is a kidnapper 😨.");
+    await message.reply("She is a kidnapper 😨");
+  } else if (message.content.includes("ments")) {
+    await message.reply("we need some darfield pictures 😍");
   } else if (message.content === "boo" || message.content === "Boo") {
     await message.reply("👻🐝");
+  } else if (
+    message.content.includes("money") ||
+    message.content.includes("Money")
+  ) {
+    await message.react("<:money:1307037302593425408>");
+  } else if (message.content.includes("hehe")) {
+    await message.react("<:hehe:1307038056141815880>");
   }
 
   if (message.reference) {
