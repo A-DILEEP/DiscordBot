@@ -84,8 +84,8 @@ client.on("messageCreate", async (message) => {
 
   if (message.content === "what am i" || message.content === "what i am") {
     await message.reply("You are a Noob bish! 😂");
-  } else if (message.content.includes("tdd")) {
-    await message.reply("I think she is at the gym.");
+  } else if (message.content.includes("cry")) {
+    await message.reply("<:crying:1306851636735643729>");
   } else if (message.content.includes("jr")) {
     await message.reply("He is prob staring at the screen haha.");
   } else if (message.content.includes("rave")) {
@@ -100,7 +100,6 @@ client.on("messageCreate", async (message) => {
     await message.reply("👻🐝");
   }
 
- 
   if (message.reference) {
     try {
       const messageReplied = await message.channel.messages.fetch(
