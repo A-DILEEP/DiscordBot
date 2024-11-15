@@ -92,9 +92,11 @@ client.on("messageCreate", async (message) => {
   } else if (message.content.includes("trix")) {
     await message.reply("She is a kidnapper 😨");
   } else if (message.content.includes("ments")) {
-    await message.reply("we need some darfield pictures 😍");
+    await message.reply("we need some darfield pictures ments😍");
   } else if (message.content === "boo" || message.content === "Boo") {
     await message.reply("👻🐝");
+  } else if (message.content === "kill" || message.content === "Kill") {
+    await message.reply("<:im_gonna_kill_u:1307037318305284147>");
   } else if (
     message.content.includes("money") ||
     message.content.includes("Money")
