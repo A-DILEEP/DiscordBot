@@ -21,7 +21,6 @@ export default {
     const member = interaction.member;
 
     try {
-      // Find the role by name
       const role = guild.roles.cache.find((r) => r.name === color);
 
       if (!role) {
@@ -31,7 +30,6 @@ export default {
         });
       }
 
-      // Remove any existing color roles from the user
       const colorRoles = ["Red", "Blue", "Green"];
       const rolesToRemove = member.roles.cache.filter((r) =>
         colorRoles.includes(r.name)
@@ -39,7 +37,6 @@ export default {
 
       await member.roles.remove(rolesToRemove);
 
-      // Assign the new color role
       await member.roles.add(role);
       await interaction.reply({
         content: `You have been assigned the **${color}** role!`,

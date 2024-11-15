@@ -32,7 +32,7 @@ for (const file of commandFiles) {
   commands.push(command.data.toJSON());
 }
 
-// Register slash commands
+
 const rest = new REST({ version: "10" }).setToken(token);
 
 (async () => {
@@ -51,7 +51,6 @@ client.once("ready", () => {
   console.log("Bot is online");
 });
 
-// Handle slash commands
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
