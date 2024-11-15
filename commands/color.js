@@ -12,7 +12,8 @@ export default {
         .addChoices(
           { name: "Red", value: "Red" },
           { name: "Blue", value: "Blue" },
-          { name: "Green", value: "Green" }
+          { name: "Green", value: "Green" },
+          { name: "Black", value: "Black" }
         )
     ),
   async execute(interaction) {
@@ -30,7 +31,7 @@ export default {
         });
       }
 
-      const colorRoles = ["Red", "Blue", "Green"];
+      const colorRoles = ["Red", "Blue", "Green","Black"];
       const rolesToRemove = member.roles.cache.filter((r) =>
         colorRoles.includes(r.name)
       );

@@ -11,9 +11,7 @@ dotenv.config();
 
 const {
   CLIENT_ID: clientId,
-  GUILD_ID: guildId,
   TOKEN: token,
-  CHANNEL_ID: channelID,
 } = process.env;
 
 const client = new Client({
@@ -42,7 +40,7 @@ async function loadCommands() {
 
   try {
     console.log("Started refreshing application (/) commands.");
-    await rest.put(Routes.applicationGuildCommands(clientId, guildId), {
+    await rest.put(Routes.applicationCommands(clientId),{
       body: commands,
     });
     console.log("Successfully reloaded application (/) commands.");
@@ -78,8 +76,6 @@ client.on("interactionCreate", async (interaction) => {
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
-
-  if (message.channel.id !== channelID) return;
 
   if (message.content.endsWith("bish spongebob")) {
     await message.react("😭");
