@@ -1,6 +1,6 @@
 ## Terms of Service for KitKat Bot
 
-Last Updated: [15-11-2024]
+Last Updated: [16-11-2024]
 
 ### 1. Acceptance of Terms
 By using KitKat (the "Bot"), you agree to these Terms of Service ("Terms"). If you do not agree with any part of these Terms, please do not use the Bot.
@@ -38,5 +38,5 @@ The Bot is provided "as is" without warranties of any kind. We do not guarantee 
 We may terminate or restrict access to the Bot for any user or server that violates these Terms or engages in harmful activities.
 
 ### 9. Contact Us
-If you have any questions or concerns about these Terms, please contact us at [dileepalla2003@gmail.com].
+If you have any questions or concerns about these Terms, please contact us at [southwardsurge@gmail.com].
 

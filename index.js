@@ -91,7 +91,7 @@ client.on("messageCreate", async (message) => {
     await message.reply("Go shove that pan in another place");
   } else if (message.content.includes("trix")) {
     await message.reply("She is a kidnapper 😨");
-  } else if (message.content.includes("ments")) {
+  } else if (message.content==="ments") {
     await message.reply("we need some darfield pictures ments😍");
   } else if (message.content === "boo" || message.content === "Boo") {
     await message.reply("👻🐝");
