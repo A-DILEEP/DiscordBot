@@ -2,7 +2,7 @@
 Last Updated: [16-11-2024]
 
 ### 1. Introduction
-This Privacy Policy explains how [Your Bot's Name] ("we", "us", or "our") handles your data while using our services on Discord. By inviting or using [Your Bot's Name], you agree to the terms of this policy.
+This Privacy Policy explains how Naruto ("we", "us", or "our") handles your data while using our services on Discord. By inviting or using Naruto, you agree to the terms of this policy.
 
 ### 2. Data Collection
 The bot "Naruto" only collects minimal data to provide its core functionalities. The types of data collected include:
