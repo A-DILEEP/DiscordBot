@@ -4,6 +4,7 @@ import {
   REST,
   Routes,
   Collection,
+  ActivityType,
 } from "discord.js";
 import dotenv from "dotenv";
 import fs from "fs";
@@ -48,6 +49,8 @@ async function loadCommands() {
 
 client.once("ready", () => {
   console.log("Bot is online");
+  client.user.setActivity("Your Commands",{type:ActivityType.Listening});
+  // client.user.setPresence({status:"dnd",activities:[{name:"for commands!",type:ActivityType.Watching},],});
   loadCommands();
 });
 
@@ -82,7 +85,7 @@ client.on("messageCreate", async (message) => {
   } else if (message.content.includes("jr")) {
     await message.reply("He is prob staring at the screen haha");
   } else if (message.content.includes("rave")) {
-    await message.reply("Are you calling the person who likes toes? 🤔");
+    await message.reply("Are you calling the person who likes hair toes? 🤔");
   } else if (message.content.includes("jonny")) {
     await message.reply("Oh, is that noob online?");
   } else if (message.content.includes(":pan:")) {
@@ -126,5 +129,6 @@ client.on("messageCreate", async (message) => {
     }
   }
 });
+
 
 client.login(token);
