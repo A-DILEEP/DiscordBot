@@ -50,7 +50,6 @@ async function loadCommands() {
 client.once("ready", () => {
   console.log("Bot is online");
   client.user.setActivity("Your Commands",{type:ActivityType.Listening});
-  // client.user.setPresence({status:"dnd",activities:[{name:"for commands!",type:ActivityType.Watching},],});
   loadCommands();
 });
 
