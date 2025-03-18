@@ -49,7 +49,7 @@ async function loadCommands() {
 
 client.once("ready", () => {
   console.log("Bot is online");
-  client.user.setActivity("Your Commands",{type:ActivityType.Listening});
+  client.user.setActivity("Your Commands", { type: ActivityType.Listening });
   loadCommands();
 });
 
@@ -83,18 +83,10 @@ client.on("messageCreate", async (message) => {
     await message.reply("<:crying:1306851636735643729>");
   } else if (message.content.includes("jr")) {
     await message.reply("He is prob staring at the screen haha");
-  } else if (message.content.includes("rave")) {
-    await message.reply("Are you calling the person who likes hair toes? 🤔");
   } else if (message.content.includes("jonny")) {
     await message.reply("Oh, is that noob online?");
   } else if (message.content.includes(":pan:")) {
     await message.reply("Go shove that pan in another place");
-  } else if (message.content.includes("trix")) {
-    await message.reply("She is a kidnapper 😨");
-  } else if (message.content === "ments") {
-    await message.reply("we need some darfield pictures ments😍");
-  } else if (message.content === "boo" || message.content === "Boo") {
-    await message.reply("👻🐝");
   } else if (message.content === "kill" || message.content === "Kill") {
     await message.reply("<:im_gonna_kill_u:1307037318305284147>");
   } else if (
@@ -128,6 +120,5 @@ client.on("messageCreate", async (message) => {
     }
   }
 });
-
 
 client.login(token);
