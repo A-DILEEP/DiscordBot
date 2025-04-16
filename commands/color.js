@@ -31,7 +31,7 @@ export default {
         });
       }
 
-      const colorRoles = ["Red", "Blue", "Green","Black"];
+      const colorRoles = ["Red", "Blue", "Green", "Black"];
       const rolesToRemove = member.roles.cache.filter((r) =>
         colorRoles.includes(r.name)
       );
@@ -41,7 +41,6 @@ export default {
       await member.roles.add(role);
       await interaction.reply({
         content: `You have been assigned the **${color}** role!`,
-        ephemeral: true,
       });
     } catch (error) {
       console.error(error);
