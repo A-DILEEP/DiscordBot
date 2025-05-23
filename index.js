@@ -125,28 +125,6 @@ client.on("messageCreate", async (message) => {
       "https://media.giphy.com/media/kYNVwkyB3jkauFJrZA/giphy.gif"
     );
   }
-
-  if (message.reference) {
-    try {
-      const messageReplied = await message.channel.messages.fetch(
-        message.reference.messageId
-      );
-
-      if (
-        messageReplied.author.id === client.user.id &&
-        message.content === "boo"
-      ) {
-        await message.reply("👻👻");
-      } else if (
-        messageReplied.author.id === client.user.id &&
-        message.content.includes("which screen")
-      ) {
-        await message.reply("idk, prob some Instagram haha.");
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
 });
 
 client.login(token);
