@@ -17,10 +17,25 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers,
   ],
 });
 
 client.commands = new Collection();
+const statuses = [
+  "Listening to your commands 🎧",
+  "Laughing at your typos 😂",
+  "Roasting noobs 🔥",
+  "Hacking the mainframe... jk",
+];
+
+let i = 0;
+setInterval(() => {
+  client.user.setActivity(statuses[i % statuses.length], {
+    type: ActivityType.Watching,
+  });
+  i++;
+}, 10000);
 
 const commandFiles = fs
   .readdirSync("./commands")
@@ -46,6 +61,13 @@ async function loadCommands() {
     console.error(error);
   }
 }
+
+client.on("guildMemberAdd", (member) => {
+  const channel = member.guild.systemChannel;
+  if (channel) {
+    channel.send(`Welcome, ${member}! I am watching you... 👀`);
+  }
+});
 
 client.once("ready", () => {
   console.log("Bot is online");
@@ -96,6 +118,16 @@ client.on("messageCreate", async (message) => {
     await message.react("<:money:1307037302593425408>");
   } else if (message.content.includes("hehe")) {
     await message.react("<:hehe:1307038056141815880>");
+  } else if (
+    message.content.includes("crazy") ||
+    message.content.includes("wth") ||
+    message.content.includes("omg")
+  ) {
+    await message.reply("<:psych:1307394614948397137>");
+  } else if (message.content.includes("good morning")) {
+    await message.reply(
+      "https://media.tenor.com/m/AdkYEgerVUUAAAAC/tired-sleepy.gif"
+    );
   }
 
   if (message.reference) {
