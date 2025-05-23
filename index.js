@@ -95,7 +95,7 @@ client.on("interactionCreate", async (interaction) => {
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
-  if (message.content.endsWith("bish spongebob")) {
+  if (message.content.endsWith("bish naruto")) {
     await message.react("😭");
     await message.reply("Don't be mean to me!");
   }
@@ -103,10 +103,6 @@ client.on("messageCreate", async (message) => {
     await message.reply("You are a Noob bish! 😂");
   } else if (message.content.includes("cry")) {
     await message.reply("<:crying:1306851636735643729>");
-  } else if (message.content.includes("jr")) {
-    await message.reply("He is prob staring at the screen haha");
-  } else if (message.content.includes("jonny")) {
-    await message.reply("Oh, is that noob online?");
   } else if (message.content.includes(":pan:")) {
     await message.reply("Go shove that pan in another place");
   } else if (message.content === "kill" || message.content === "Kill") {
@@ -126,7 +122,7 @@ client.on("messageCreate", async (message) => {
     await message.reply("<:psych:1307394614948397137>");
   } else if (message.content.includes("good morning")) {
     await message.reply(
-      "https://media.tenor.com/m/AdkYEgerVUUAAAAC/tired-sleepy.gif"
+      "https://media.giphy.com/media/kYNVwkyB3jkauFJrZA/giphy.gif"
     );
   }
 
