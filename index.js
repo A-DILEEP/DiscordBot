@@ -10,7 +10,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 dotenv.config();
 
-const { CLIENT_ID: clientId, TOKEN: token } = process.env;
+const { CLIENT_ID: clientId, TOKEN: token, GUILD_ID: guildId } = process.env;
 
 const client = new Client({
   intents: [
@@ -53,7 +53,7 @@ async function loadCommands() {
 
   try {
     console.log("Started refreshing application (/) commands.");
-    await rest.put(Routes.applicationCommands(clientId), {
+    await rest.put(Routes.applicationGuildCommands(clientId, guildId), {
       body: commands,
     });
     console.log("Successfully reloaded application (/) commands.");
@@ -71,6 +71,12 @@ client.on("guildMemberAdd", (member) => {
 
 client.once("ready", () => {
   console.log("Bot is online");
+  console.log(`Logged in as: ${client.user.tag}`);
+  console.log(`Bot ID: ${client.user.id}`);
+  console.log("Guilds/Servers the bot is in:");
+  client.guilds.cache.forEach((guild) => {
+    console.log(`- ${guild.name}: ${guild.id}`);
+  });
   client.user.setActivity("Your Commands", { type: ActivityType.Listening });
   loadCommands();
 });
@@ -95,6 +101,75 @@ client.on("interactionCreate", async (interaction) => {
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
+
+  // Avatar command
+  if (message.content.toLowerCase().startsWith("?av")) {
+    let user = message.author;
+    const args = message.content.slice(3).trim();
+
+    // If a username is provided, search for that user in the server
+    if (args) {
+      try {
+        // Check if user mentioned someone with @
+        if (message.mentions.users.size > 0) {
+          user = message.mentions.users.first();
+        } else {
+          // Remove @ symbol if provided
+          const searchQuery = args.replace(/^@/, "").toLowerCase();
+          const members = await message.guild.members.fetch();
+
+          // Try exact match first (username or nickname)
+          let foundMember = members.find(
+            (member) =>
+              member.user.username.toLowerCase() === searchQuery ||
+              (member.nickname &&
+                member.nickname.toLowerCase() === searchQuery) ||
+              (member.user.globalName &&
+                member.user.globalName.toLowerCase() === searchQuery),
+          );
+
+          // If no exact match, try partial match
+          if (!foundMember) {
+            foundMember = members.find(
+              (member) =>
+                member.user.username.toLowerCase().includes(searchQuery) ||
+                (member.nickname &&
+                  member.nickname.toLowerCase().includes(searchQuery)) ||
+                (member.user.globalName &&
+                  member.user.globalName.toLowerCase().includes(searchQuery)),
+            );
+          }
+
+          if (foundMember) {
+            user = foundMember.user;
+          } else {
+            await message.reply(
+              `❌ User **${args}** not found in this server.`,
+            );
+            return;
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching members:", error);
+        await message.reply("❌ Error searching for user. Please try again.");
+        return;
+      }
+    }
+
+    const avatarEmbed = {
+      title: `${user.username}'s Avatar`,
+      image: {
+        url: user.displayAvatarURL({ size: 1024 }),
+      },
+      color: 0x5865f2,
+      footer: {
+        text: user.id,
+      },
+    };
+    await message.reply({ embeds: [avatarEmbed] });
+    return;
+  }
+
   if (message.content.endsWith("bish naruto")) {
     await message.react("😭");
     await message.reply("Don't be mean to me!");
@@ -122,7 +197,7 @@ client.on("messageCreate", async (message) => {
     await message.reply("<:psych:1307394614948397137>");
   } else if (message.content.includes("good morning")) {
     await message.reply(
-      "https://media.giphy.com/media/kYNVwkyB3jkauFJrZA/giphy.gif"
+      "https://media.giphy.com/media/kYNVwkyB3jkauFJrZA/giphy.gif",
     );
   }
 });
