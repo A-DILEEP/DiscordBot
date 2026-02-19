@@ -1,6 +1,4 @@
 import { SlashCommandBuilder } from "discord.js";
-
-// Store active games (in production, use a database)
 const activeGames = new Map();
 
 export default {

@@ -1,7 +1,6 @@
 import { SlashCommandBuilder } from "discord.js";
 import ollama from "ollama";
 
-// Store conversation history (in production, use a database)
 const conversationHistory = new Map();
 
 export default {
@@ -27,34 +26,27 @@ export default {
     const shouldReset = interaction.options.getBoolean("reset") || false;
     const userId = interaction.user.id;
 
-    // Reset conversation if requested
     if (shouldReset) {
       conversationHistory.delete(userId);
       return await interaction.reply("🧹 **Conversation reset!** Your chat history has been cleared.");
     }
-
-    // Get or initialize conversation history
     if (!conversationHistory.has(userId)) {
       conversationHistory.set(userId, []);
     }
 
     const history = conversationHistory.get(userId);
 
-    // Add user message to history
     history.push({ role: "user", content: userMessage });
 
-    // Keep only last 5 messages to avoid context limits
     if (history.length > 5) {
       history.splice(0, history.length - 5);
     }
 
     try {
-      await interaction.deferReply(); // Show "thinking" indicator
+      await interaction.deferReply();
 
-      // Create conversation context for Ollama
       let context = "You are a helpful, friendly Discord bot named Naruto Bot. You're fun, witty, and engaging. Keep responses conversational and not too long. You can be sarcastic but always helpful.\n\n";
 
-      // Add conversation history
       history.forEach(msg => {
         if (msg.role === "user") {
           context += `User: ${msg.content}\n`;
@@ -66,17 +58,15 @@ export default {
       context += "Assistant: ";
 
       const response = await ollama.chat({
-        model: 'llama2', // You can change this to any model you have installed
+        model: 'llama2',
         messages: [{ role: 'user', content: context }],
         stream: false,
       });
 
       const aiResponse = response.message.content;
 
-      // Add AI response to history
       history.push({ role: "assistant", content: aiResponse });
 
-      // Format the response
       const reply = `🤖 **Local AI Response:**\n${aiResponse}\n\n💬 *Continue the conversation with another /ai command!*`;
 
       await interaction.editReply(reply);

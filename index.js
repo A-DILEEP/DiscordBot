@@ -102,23 +102,18 @@ client.on("interactionCreate", async (interaction) => {
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
-  // Avatar command
   if (message.content.toLowerCase().startsWith("?av")) {
     let user = message.author;
     const args = message.content.slice(3).trim();
 
-    // If a username is provided, search for that user in the server
     if (args) {
       try {
-        // Check if user mentioned someone with @
         if (message.mentions.users.size > 0) {
           user = message.mentions.users.first();
         } else {
-          // Remove @ symbol if provided
           const searchQuery = args.replace(/^@/, "").toLowerCase();
           const members = await message.guild.members.fetch();
 
-          // Try exact match first (username or nickname)
           let foundMember = members.find(
             (member) =>
               member.user.username.toLowerCase() === searchQuery ||
@@ -127,8 +122,6 @@ client.on("messageCreate", async (message) => {
               (member.user.globalName &&
                 member.user.globalName.toLowerCase() === searchQuery),
           );
-
-          // If no exact match, try partial match
           if (!foundMember) {
             foundMember = members.find(
               (member) =>
