@@ -1,0 +1,266 @@
+[
+  {
+    "question": "I have keys but no locks, space but no room. What am I?",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Used daily",
+      "Connected to a computer",
+      "You type on it"
+    ]
+  },
+  {
+    "question": "The more you take, the more you leave behind.",
+    "answers": [
+      "footsteps",
+      "steps"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Walking",
+      "Shoes",
+      "Sand"
+    ]
+  },
+  {
+    "question": "What gets wetter while drying?",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "After shower",
+      "Fabric"
+    ]
+  },
+  {
+    "question": "I speak without a mouth and hear without ears.",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Mountains",
+      "Repeats"
+    ]
+  },
+  {
+    "question": "What has a heart that doesn’t beat?",
+    "answers": [
+      "artichoke"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Vegetable",
+      "Food",
+      "Green"
+    ]
+  },
+  {
+    "question": "I grow without living, need air, and water kills me.",
+    "answers": [
+      "fire"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Hot",
+      "Burns",
+      "Dangerous"
+    ]
+  },
+  {
+    "question": "What has many teeth but can’t bite?",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Bathroom",
+      "Plastic"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw?",
+    "answers": [
+      "cold",
+      "a cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "answers": [
+      "m",
+      "letter m",
+      "the letter m"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Alphabet",
+      "Spelling",
+      "Letters"
+    ]
+  },
+  {
+    "question": "I’m light as a feather, yet the strongest person can’t hold me for long.",
+    "answers": [
+      "breath"
+    ],
+    "difficulty": "hard",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Lungs",
+      "Breathe"
+    ]
+  },
+  {
+    "question": "If you drop me, I’m sure to crack, but give me a smile and I’ll always smile back.",
+    "answers": [
+      "mirror"
+    ],
+    "difficulty": "hard",
+    "category": "fun",
+    "hints": [
+      "Reflection",
+      "Glass",
+      "Face"
+    ]
+  },
+  {
+    "question": "What number is odd until you remove one letter?",
+    "answers": [
+      "seven"
+    ],
+    "difficulty": "medium",
+    "category": "math",
+    "hints": [
+      "Number",
+      "Spelling",
+      "Even"
+    ]
+  },
+  {
+    "question": "I have branches, but no fruit, trunk, or leaves.",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "hard",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Building"
+    ]
+  },
+  {
+    "question": "The person who makes it sells it. The person who buys it never uses it.",
+    "answers": [
+      "coffin"
+    ],
+    "difficulty": "hard",
+    "category": "dark",
+    "hints": [
+      "Death",
+      "Funeral",
+      "Wood"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down?",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What disappears as soon as you say its name?",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body?",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Metal",
+      "Flip"
+    ]
+  },
+  {
+    "question": "I shave every day, but my beard stays the same.",
+    "answers": [
+      "barber"
+    ],
+    "difficulty": "hard",
+    "category": "logic",
+    "hints": [
+      "Job",
+      "Hair",
+      "Shop"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot?",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Envelope",
+      "Post office"
+    ]
+  },
+  {
+    "question": "I am always in front of you but can’t be seen.",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Tomorrow",
+      "Ahead"
+    ]
+  }
+]

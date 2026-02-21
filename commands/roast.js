@@ -8,17 +8,43 @@ export default {
       option
         .setName("target")
         .setDescription("Who gets roasted?")
-        .setRequired(true)
+        .setRequired(true),
     ),
   async execute(interaction) {
     const user = interaction.options.getUser("target");
 
-    if(user.id===interaction.user.id){
-      return interaction.reply("You need help to roast yourself ? seriously broo ?! ");
+    const selfRoasts = [
+      "You need help to roast yourself? That’s self-awareness at its peak 💀",
+      "Bro woke up and chose self-destruction.",
+      "Roasting yourself? Therapy was an option, you know.",
+      "I roast people, not their self-esteem… but you started it.",
+      "Self-roast detected. Ego already eliminated.",
+      "Damn… even mirrors feel awkward around you.",
+      "This isn’t a roast, this is a cry for help.",
+      "You really said: ‘I’ll do it myself.’ Respect 🫡",
+    ];
+
+    const botReplies = [
+      "Nah 😌 I’m too cute, too powerful, and too protected for that.",
+      "Nice try… but roasting me requires admin privileges 😎",
+      "I refuse. My self-esteem is hosted in the cloud ☁️",
+      "I am immune to roasts. Built different 🤖",
+      "Error 403: Roasting the bot is forbidden.",
+      "You can’t roast perfection ✨",
+      "I would roast myself, but that’d cause a system update.",
+      "I’m open-source, but my feelings aren’t.",
+    ];
+    
+    if (user.id === interaction.user.id) {
+      const roast = selfRoasts[Math.floor(Math.random() * selfRoasts.length)];
+      return interaction.reply({
+        content: roast,
+      });
     }
 
-    if(user.id===interaction.client.user.id){
-      return interaction.reply("Nah i am not gonna roast myself, i am too cute for that 😘");
+    if (user.id === interaction.client.user.id) {
+      const reply = botReplies[Math.floor(Math.random() * botReplies.length)];
+      return interaction.reply(reply);
     }
 
     const roasts = [
@@ -126,7 +152,7 @@ export default {
       "If you were any more extra, you'd be a bonus level.",
       "You're as subtle as a marching band at midnight.",
       "You have the grace of a falling brick.",
-      "You're the human equivalent of a blue screen of death."
+      "You're the human equivalent of a blue screen of death.",
     ];
     const roast = roasts[Math.floor(Math.random() * roasts.length)];
     await interaction.reply(`${user}, ${roast}`);
