@@ -6,7 +6,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index"
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "clean": "node clear-commands.js",
+    "reset": "npm run clean && npm run deploy && npm start"
   },
   "author": "",
   "license": "ISC",

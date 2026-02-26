@@ -1,0 +1,2609 @@
+[
+  {
+    "question": "What has keys but can’t open locks?",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries?",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body?",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot?",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap?",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks?",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs?",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see?",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched?",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down?",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite?",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up?",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head?",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks?",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space?",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs?",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away?",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses?",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear?",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw?",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What has a ring but no finger?",
+    "answers": [
+      "phone"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Call",
+      "Device",
+      "Sound"
+    ]
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it?",
+    "answers": [
+      "teapot"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Drink",
+      "Tea",
+      "Kettle"
+    ]
+  },
+  {
+    "question": "What has a spine but no bones?",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to?",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Repeat",
+      "Voice"
+    ]
+  },
+  {
+    "question": "What is always in front of you but can’t be seen?",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "meaningful",
+    "hints": [
+      "Time",
+      "Ahead",
+      "Life"
+    ]
+  },
+  {
+    "question": "What disappears the moment you say its name?",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has branches but no fruit?",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Office"
+    ]
+  },
+  {
+    "question": "What can break but never fall?",
+    "answers": [
+      "day"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Time",
+      "Morning",
+      "Night"
+    ]
+  },
+  {
+    "question": "What falls but never breaks?",
+    "answers": [
+      "night"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Dark",
+      "Sleep",
+      "Time"
+    ]
+  },
+  {
+    "question": "What can’t be seen but can be felt?",
+    "answers": [
+      "wind"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Breeze",
+      "Weather"
+    ]
+  },
+  {
+    "question": "What has keys but can’t open locks? (variant 30)",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries? (variant 31)",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body? (variant 32)",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot? (variant 33)",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap? (variant 34)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks? (variant 35)",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs? (variant 36)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see? (variant 37)",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched? (variant 38)",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down? (variant 39)",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite? (variant 40)",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up? (variant 41)",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head? (variant 42)",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks? (variant 43)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space? (variant 44)",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs? (variant 45)",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away? (variant 46)",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses? (variant 47)",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear? (variant 48)",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw? (variant 49)",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What has a ring but no finger? (variant 50)",
+    "answers": [
+      "phone"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Call",
+      "Device",
+      "Sound"
+    ]
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it? (variant 51)",
+    "answers": [
+      "teapot"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Drink",
+      "Tea",
+      "Kettle"
+    ]
+  },
+  {
+    "question": "What has a spine but no bones? (variant 52)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to? (variant 53)",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Repeat",
+      "Voice"
+    ]
+  },
+  {
+    "question": "What is always in front of you but can’t be seen? (variant 54)",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "meaningful",
+    "hints": [
+      "Time",
+      "Ahead",
+      "Life"
+    ]
+  },
+  {
+    "question": "What disappears the moment you say its name? (variant 55)",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has branches but no fruit? (variant 56)",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Office"
+    ]
+  },
+  {
+    "question": "What can break but never fall? (variant 57)",
+    "answers": [
+      "day"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Time",
+      "Morning",
+      "Night"
+    ]
+  },
+  {
+    "question": "What falls but never breaks? (variant 58)",
+    "answers": [
+      "night"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Dark",
+      "Sleep",
+      "Time"
+    ]
+  },
+  {
+    "question": "What can’t be seen but can be felt? (variant 59)",
+    "answers": [
+      "wind"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Breeze",
+      "Weather"
+    ]
+  },
+  {
+    "question": "What has keys but can’t open locks? (variant 60)",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries? (variant 61)",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body? (variant 62)",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot? (variant 63)",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap? (variant 64)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks? (variant 65)",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs? (variant 66)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see? (variant 67)",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched? (variant 68)",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down? (variant 69)",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite? (variant 70)",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up? (variant 71)",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head? (variant 72)",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks? (variant 73)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space? (variant 74)",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs? (variant 75)",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away? (variant 76)",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses? (variant 77)",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear? (variant 78)",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw? (variant 79)",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What has a ring but no finger? (variant 80)",
+    "answers": [
+      "phone"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Call",
+      "Device",
+      "Sound"
+    ]
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it? (variant 81)",
+    "answers": [
+      "teapot"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Drink",
+      "Tea",
+      "Kettle"
+    ]
+  },
+  {
+    "question": "What has a spine but no bones? (variant 82)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to? (variant 83)",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Repeat",
+      "Voice"
+    ]
+  },
+  {
+    "question": "What is always in front of you but can’t be seen? (variant 84)",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "meaningful",
+    "hints": [
+      "Time",
+      "Ahead",
+      "Life"
+    ]
+  },
+  {
+    "question": "What disappears the moment you say its name? (variant 85)",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has branches but no fruit? (variant 86)",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Office"
+    ]
+  },
+  {
+    "question": "What can break but never fall? (variant 87)",
+    "answers": [
+      "day"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Time",
+      "Morning",
+      "Night"
+    ]
+  },
+  {
+    "question": "What falls but never breaks? (variant 88)",
+    "answers": [
+      "night"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Dark",
+      "Sleep",
+      "Time"
+    ]
+  },
+  {
+    "question": "What can’t be seen but can be felt? (variant 89)",
+    "answers": [
+      "wind"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Breeze",
+      "Weather"
+    ]
+  },
+  {
+    "question": "What has keys but can’t open locks? (variant 90)",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries? (variant 91)",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body? (variant 92)",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot? (variant 93)",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap? (variant 94)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks? (variant 95)",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs? (variant 96)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see? (variant 97)",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched? (variant 98)",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down? (variant 99)",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite? (variant 100)",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up? (variant 101)",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head? (variant 102)",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks? (variant 103)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space? (variant 104)",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs? (variant 105)",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away? (variant 106)",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses? (variant 107)",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear? (variant 108)",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw? (variant 109)",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What has a ring but no finger? (variant 110)",
+    "answers": [
+      "phone"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Call",
+      "Device",
+      "Sound"
+    ]
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it? (variant 111)",
+    "answers": [
+      "teapot"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Drink",
+      "Tea",
+      "Kettle"
+    ]
+  },
+  {
+    "question": "What has a spine but no bones? (variant 112)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to? (variant 113)",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Repeat",
+      "Voice"
+    ]
+  },
+  {
+    "question": "What is always in front of you but can’t be seen? (variant 114)",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "meaningful",
+    "hints": [
+      "Time",
+      "Ahead",
+      "Life"
+    ]
+  },
+  {
+    "question": "What disappears the moment you say its name? (variant 115)",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has branches but no fruit? (variant 116)",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Office"
+    ]
+  },
+  {
+    "question": "What can break but never fall? (variant 117)",
+    "answers": [
+      "day"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Time",
+      "Morning",
+      "Night"
+    ]
+  },
+  {
+    "question": "What falls but never breaks? (variant 118)",
+    "answers": [
+      "night"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Dark",
+      "Sleep",
+      "Time"
+    ]
+  },
+  {
+    "question": "What can’t be seen but can be felt? (variant 119)",
+    "answers": [
+      "wind"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Breeze",
+      "Weather"
+    ]
+  },
+  {
+    "question": "What has keys but can’t open locks? (variant 120)",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries? (variant 121)",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body? (variant 122)",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot? (variant 123)",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap? (variant 124)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks? (variant 125)",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs? (variant 126)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see? (variant 127)",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched? (variant 128)",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down? (variant 129)",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite? (variant 130)",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up? (variant 131)",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head? (variant 132)",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks? (variant 133)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space? (variant 134)",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs? (variant 135)",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away? (variant 136)",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses? (variant 137)",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear? (variant 138)",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw? (variant 139)",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What has a ring but no finger? (variant 140)",
+    "answers": [
+      "phone"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Call",
+      "Device",
+      "Sound"
+    ]
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it? (variant 141)",
+    "answers": [
+      "teapot"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Drink",
+      "Tea",
+      "Kettle"
+    ]
+  },
+  {
+    "question": "What has a spine but no bones? (variant 142)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to? (variant 143)",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Repeat",
+      "Voice"
+    ]
+  },
+  {
+    "question": "What is always in front of you but can’t be seen? (variant 144)",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "meaningful",
+    "hints": [
+      "Time",
+      "Ahead",
+      "Life"
+    ]
+  },
+  {
+    "question": "What disappears the moment you say its name? (variant 145)",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has branches but no fruit? (variant 146)",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Office"
+    ]
+  },
+  {
+    "question": "What can break but never fall? (variant 147)",
+    "answers": [
+      "day"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Time",
+      "Morning",
+      "Night"
+    ]
+  },
+  {
+    "question": "What falls but never breaks? (variant 148)",
+    "answers": [
+      "night"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Dark",
+      "Sleep",
+      "Time"
+    ]
+  },
+  {
+    "question": "What can’t be seen but can be felt? (variant 149)",
+    "answers": [
+      "wind"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Breeze",
+      "Weather"
+    ]
+  },
+  {
+    "question": "What has keys but can’t open locks? (variant 150)",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries? (variant 151)",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body? (variant 152)",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot? (variant 153)",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap? (variant 154)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks? (variant 155)",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs? (variant 156)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see? (variant 157)",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched? (variant 158)",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down? (variant 159)",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite? (variant 160)",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up? (variant 161)",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head? (variant 162)",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks? (variant 163)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space? (variant 164)",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs? (variant 165)",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away? (variant 166)",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses? (variant 167)",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear? (variant 168)",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw? (variant 169)",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  },
+  {
+    "question": "What has a ring but no finger? (variant 170)",
+    "answers": [
+      "phone"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Call",
+      "Device",
+      "Sound"
+    ]
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it? (variant 171)",
+    "answers": [
+      "teapot"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Drink",
+      "Tea",
+      "Kettle"
+    ]
+  },
+  {
+    "question": "What has a spine but no bones? (variant 172)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to? (variant 173)",
+    "answers": [
+      "echo"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Sound",
+      "Repeat",
+      "Voice"
+    ]
+  },
+  {
+    "question": "What is always in front of you but can’t be seen? (variant 174)",
+    "answers": [
+      "future"
+    ],
+    "difficulty": "hard",
+    "category": "meaningful",
+    "hints": [
+      "Time",
+      "Ahead",
+      "Life"
+    ]
+  },
+  {
+    "question": "What disappears the moment you say its name? (variant 175)",
+    "answers": [
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Quiet",
+      "Sound",
+      "Noise"
+    ]
+  },
+  {
+    "question": "What has branches but no fruit? (variant 176)",
+    "answers": [
+      "bank"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Loan",
+      "Office"
+    ]
+  },
+  {
+    "question": "What can break but never fall? (variant 177)",
+    "answers": [
+      "day"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Time",
+      "Morning",
+      "Night"
+    ]
+  },
+  {
+    "question": "What falls but never breaks? (variant 178)",
+    "answers": [
+      "night"
+    ],
+    "difficulty": "hard",
+    "category": "wordplay",
+    "hints": [
+      "Dark",
+      "Sleep",
+      "Time"
+    ]
+  },
+  {
+    "question": "What can’t be seen but can be felt? (variant 179)",
+    "answers": [
+      "wind"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Air",
+      "Breeze",
+      "Weather"
+    ]
+  },
+  {
+    "question": "What has keys but can’t open locks? (variant 180)",
+    "answers": [
+      "keyboard"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Typing",
+      "Computer",
+      "Keys"
+    ]
+  },
+  {
+    "question": "What gets wetter as it dries? (variant 181)",
+    "answers": [
+      "towel"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Bathroom",
+      "Water",
+      "Cloth"
+    ]
+  },
+  {
+    "question": "What has a head and a tail but no body? (variant 182)",
+    "answers": [
+      "coin"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Money",
+      "Flip",
+      "Metal"
+    ]
+  },
+  {
+    "question": "What can travel around the world while staying in one spot? (variant 183)",
+    "answers": [
+      "stamp"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Mail",
+      "Letter",
+      "Post"
+    ]
+  },
+  {
+    "question": "What has hands but cannot clap? (variant 184)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Time",
+      "Wall",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What runs but never walks? (variant 185)",
+    "answers": [
+      "river"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Water",
+      "Flow",
+      "Stream"
+    ]
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs? (variant 186)",
+    "answers": [
+      "clock"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Time",
+      "Numbers",
+      "Tick"
+    ]
+  },
+  {
+    "question": "What has an eye but cannot see? (variant 187)",
+    "answers": [
+      "needle"
+    ],
+    "difficulty": "easy",
+    "category": "wordplay",
+    "hints": [
+      "Thread",
+      "Sewing",
+      "Sharp"
+    ]
+  },
+  {
+    "question": "What can be broken without being touched? (variant 188)",
+    "answers": [
+      "promise",
+      "silence"
+    ],
+    "difficulty": "medium",
+    "category": "meaningful",
+    "hints": [
+      "Words",
+      "Trust",
+      "Quiet"
+    ]
+  },
+  {
+    "question": "What goes up but never comes down? (variant 189)",
+    "answers": [
+      "age"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Birthday",
+      "Years",
+      "Time"
+    ]
+  },
+  {
+    "question": "What has many teeth but cannot bite? (variant 190)",
+    "answers": [
+      "comb"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Hair",
+      "Plastic",
+      "Bathroom"
+    ]
+  },
+  {
+    "question": "What comes down but never goes up? (variant 191)",
+    "answers": [
+      "rain"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Cloud",
+      "Weather",
+      "Sky"
+    ]
+  },
+  {
+    "question": "What has a neck but no head? (variant 192)",
+    "answers": [
+      "bottle"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Glass",
+      "Drink",
+      "Liquid"
+    ]
+  },
+  {
+    "question": "What has words but never speaks? (variant 193)",
+    "answers": [
+      "book"
+    ],
+    "difficulty": "easy",
+    "category": "logic",
+    "hints": [
+      "Pages",
+      "Read",
+      "Library"
+    ]
+  },
+  {
+    "question": "What can fill a room but takes no space? (variant 194)",
+    "answers": [
+      "light"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Bulb",
+      "Bright",
+      "Sun"
+    ]
+  },
+  {
+    "question": "What has one foot but many legs? (variant 195)",
+    "answers": [
+      "ruler"
+    ],
+    "difficulty": "medium",
+    "category": "wordplay",
+    "hints": [
+      "Measure",
+      "School",
+      "Straight"
+    ]
+  },
+  {
+    "question": "What gets bigger the more you take away? (variant 196)",
+    "answers": [
+      "hole"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Dig",
+      "Empty",
+      "Ground"
+    ]
+  },
+  {
+    "question": "What has cities with no houses? (variant 197)",
+    "answers": [
+      "map"
+    ],
+    "difficulty": "medium",
+    "category": "logic",
+    "hints": [
+      "Paper",
+      "Geography",
+      "World"
+    ]
+  },
+  {
+    "question": "What has ears but cannot hear? (variant 198)",
+    "answers": [
+      "corn"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Food",
+      "Yellow",
+      "Farm"
+    ]
+  },
+  {
+    "question": "What can you catch but not throw? (variant 199)",
+    "answers": [
+      "cold"
+    ],
+    "difficulty": "easy",
+    "category": "fun",
+    "hints": [
+      "Sick",
+      "Fever",
+      "Cough"
+    ]
+  }
+]
