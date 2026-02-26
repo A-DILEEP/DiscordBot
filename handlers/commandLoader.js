@@ -1,9 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-/**
- * Recursively loads all slash commands from subfolders
- */
 export async function loadCommands(client, commandsPath) {
   const commandFiles = [];
 
@@ -22,7 +19,6 @@ export async function loadCommands(client, commandsPath) {
   walk(commandsPath);
 
   for (const filePath of commandFiles) {
-    // 🔑 THIS WAS THE BUG — await must be inside async function
     const commandModule = await import(`file://${path.resolve(filePath)}`);
 
     const command = commandModule.default;
