@@ -24,13 +24,11 @@ const client = new Client({
 client.commands = new Collection();
 await loadCommands(client, "./commands");
 
-/* ======================
-   BOT STATUS
-====================== */
 const statuses = [
   "Listening to your commands 🎧",
   "Laughing at your typos 😂",
   "Roasting noobs 🔥",
+  "Do you get Dejavu.....",
   "Hacking the mainframe... jk",
 ];
 
@@ -43,9 +41,6 @@ setInterval(() => {
   statusIndex++;
 }, 10000);
 
-/* ======================
-   READY
-====================== */
 client.once("ready", () => {
   console.log("=================================");
   console.log(`✅ Bot online as ${client.user.tag}`);
@@ -54,16 +49,11 @@ client.once("ready", () => {
   console.log("=================================");
 });
 
-/* ======================
-   INTERACTIONS
-====================== */
 client.on("interactionCreate", async (interaction) => {
-  // 🔘 CONNECT 4 BUTTONS
   if (interaction.isButton()) {
     return handleC4Button(interaction);
   }
 
-  // 💬 SLASH COMMANDS (ALL games)
   if (!interaction.isChatInputCommand()) return;
 
   const command = client.commands.get(interaction.commandName);
@@ -85,13 +75,9 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
-/* ======================
-   MESSAGE COMMANDS
-====================== */
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
-  /* 🎯 GUESS GAME (message-based) */
   const game = activeGames.get(message.channel.id);
   if (game && /^\d+$/.test(message.content)) {
     const guess = parseInt(message.content, 10);
@@ -118,8 +104,9 @@ client.on("messageCreate", async (message) => {
     );
   }
 
-  /* 🖼 AVATAR COMMAND (?av) */
   if (message.content.toLowerCase().startsWith("?pfp")) {
+    if (!message.guild) return;
+
     let user = message.author;
     const args = message.content.slice(4).trim();
 
@@ -148,6 +135,7 @@ client.on("messageCreate", async (message) => {
           if (!found) {
             return message.reply(`❌ User **${args}** not found.`);
           }
+
           user = found.user;
         }
       } catch (err) {
@@ -156,20 +144,22 @@ client.on("messageCreate", async (message) => {
       }
     }
 
+    const member = await message.guild.members.fetch(user.id);
+
     return message.reply({
       embeds: [
         {
           author: {
-            name: `${user.username}'s Avatar`,
-            iconURL: user.displayAvatarURL({ dynamic: true }),
+            name: `${member.displayName}'s Avatar`,
+            icon_url: member.displayAvatarURL({ dynamic: true }),
           },
           image: {
-            url: user.displayAvatarURL({ size: 1024, dynamic: true }),
+            url: member.displayAvatarURL({ size: 1024, dynamic: true }),
           },
           color: 0xf0e000,
           footer: {
-            text: `Requested by ${message.author.username}`,
-            iconURL: message.author.displayAvatarURL({ dynamic: true }),
+            text: `Requested by ${message.member.displayName}`,
+            icon_url: message.member.displayAvatarURL({ dynamic: true }),
           },
         },
       ],
