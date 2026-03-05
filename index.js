@@ -10,10 +10,15 @@ import { activeGames } from "./commands/guess.js";
 import { handleC4Button } from "./commands/C4/C4.js";
 import { createCanvas, loadImage } from "canvas";
 
+dotenv.config();
+const { TOKEN } = process.env;
+
+/* ---------------- AVATAR COMBINER ---------------- */
+
 async function combineAvatars(avatar1, avatar2) {
   const canvas = createCanvas(512, 256);
   const ctx = canvas.getContext("2d");
-
+  
   const img1 = await loadImage(avatar1);
   const img2 = await loadImage(avatar2);
 
@@ -23,8 +28,7 @@ async function combineAvatars(avatar1, avatar2) {
   return canvas.toBuffer();
 }
 
-dotenv.config();
-const { TOKEN } = process.env;
+/* ---------------- DISCORD CLIENT ---------------- */
 
 const client = new Client({
   intents: [
@@ -38,6 +42,8 @@ const client = new Client({
 client.commands = new Collection();
 await loadCommands(client, "./commands");
 
+/* ---------------- BOT STATUS ---------------- */
+
 const statuses = [
   "Listening to your commands 🎧",
   "Laughing at your typos 😂",
@@ -47,13 +53,18 @@ const statuses = [
 ];
 
 let statusIndex = 0;
+
 setInterval(() => {
   if (!client.user) return;
+
   client.user.setActivity(statuses[statusIndex % statuses.length], {
     type: ActivityType.Watching,
   });
+
   statusIndex++;
 }, 10000);
+
+/* ---------------- READY EVENT ---------------- */
 
 client.once("ready", () => {
   console.log("=================================");
@@ -62,6 +73,8 @@ client.once("ready", () => {
   console.log(`📦 Loaded Commands: ${client.commands.size}`);
   console.log("=================================");
 });
+
+/* ---------------- SLASH COMMAND HANDLER ---------------- */
 
 client.on("interactionCreate", async (interaction) => {
   if (interaction.isButton()) {
@@ -89,10 +102,15 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
+/* ---------------- MESSAGE COMMANDS ---------------- */
+
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
+  /* ---------- GUESS GAME ---------- */
+
   const game = activeGames.get(message.channel.id);
+
   if (game && /^\d+$/.test(message.content)) {
     const guess = parseInt(message.content, 10);
     if (guess < 1 || guess > 100) return;
@@ -117,6 +135,7 @@ client.on("messageCreate", async (message) => {
         : "📈 Too high! Try lower ⬇️",
     );
   }
+  /* ---------- PFP COMMAND ---------- */
 
   if (message.content.toLowerCase().startsWith("?pfp")) {
     if (!message.guild) return;
@@ -158,32 +177,36 @@ client.on("messageCreate", async (message) => {
     }
 
     if (users.length === 0) users = [message.author];
-    if(users.length>2){
-      return message.reply("❌ Please mention or specify at most 2 users.");
+
+    if (users.length > 2) {
+      return message.reply("❌ Please specify at most 2 users.");
     }
+
+    /* ----- TWO USERS (MERGED AVATAR) ----- */
+
     if (users.length === 2) {
       const avatar1 = users[0].displayAvatarURL({
         size: 512,
         extension: "png",
       });
+
       const avatar2 = users[1].displayAvatarURL({
         size: 512,
         extension: "png",
       });
 
       const buffer = await combineAvatars(avatar1, avatar2);
+
       const member1 = await message.guild.members.fetch(users[0].id);
       const member2 = await message.guild.members.fetch(users[1].id);
+
       return message.reply({
-        content: ` ${member1.displayName} <a:ghostlovehearts:1479043244380913675> ${member2.displayName} `,
-        files: [
-          {
-            attachment: buffer,
-            name: "avatars.png",
-          },
-        ],
+        content: `${member1.displayName} <a:ghostlovehearts:1479043244380913675> ${member2.displayName}`,
+        files: [{ attachment: buffer, name: "avatars.png" }],
       });
     }
+
+    /* ----- SINGLE USER ----- */
 
     const user = users[0];
     const member = await message.guild.members.fetch(user.id);
@@ -208,5 +231,7 @@ client.on("messageCreate", async (message) => {
     });
   }
 });
+
+/* ---------------- LOGIN ---------------- */
 
 client.login(TOKEN);
