@@ -278,6 +278,7 @@ client.on("messageCreate", async (message) => {
         : "📈 Too high! Try lower ⬇️",
     );
   }
+  /* ---------- PFP COMMAND ---------- */
 
   /* ---------- PFP COMMAND ---------- */
 
