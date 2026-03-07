@@ -6,7 +6,8 @@ import { activeRiddleGames } from "./state/riddleState.js";
 const ALL_RIDDLES = [...riddles, ...newRiddles];
 let riddlePool = [];
 
-/* Shuffle */
+/* ---------------- SHUFFLE ---------------- */
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -21,6 +22,28 @@ function getRandomRiddle() {
   }
   return riddlePool.pop();
 }
+
+/* ---------------- ESCAPE REGEX ---------------- */
+
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/* ---------------- SCOREBOARD ---------------- */
+
+function getScoreboard(scores) {
+  if (!scores || scores.size === 0) {
+    return "No one scored this time.";
+  }
+
+  const sorted = [...scores.values()].sort((a, b) => b.points - a.points);
+
+  return sorted
+    .map((p, i) => `**${i + 1}. ${p.name}** — ${p.points} pts`)
+    .join("\n");
+}
+
+/* ---------------- COMMAND ---------------- */
 
 export default {
   data: new SlashCommandBuilder()
@@ -48,6 +71,7 @@ export default {
     };
 
     activeRiddleGames.set(channelId, gameState);
+
     await interaction.reply("🧩 **Riddle Survival Game Started!**");
 
     while (gameState.active && gameState.lossCount < gameState.maxLosses) {
@@ -76,11 +100,21 @@ export default {
       });
 
       collector.on("collect", (msg) => {
+        const content = msg.content.toLowerCase().trim();
+
+        /* SHOW SCORE DURING GAME */
+
+        if (content === "!score") {
+          const board = getScoreboard(gameState.scores);
+          return msg.reply(`🏆 **Current Scoreboard**\n\n${board}`);
+        }
+
         if (solved) return;
 
-        const guess = msg.content.toLowerCase().trim();
+        const guess = content.replace(/[^\w\s]/g, "");
+
         const correct = riddle.answers.some((a) =>
-          new RegExp(`\\b${a}\\b`).test(guess),
+          new RegExp(`\\b${escapeRegex(a)}\\b`, "i").test(guess),
         );
 
         if (correct) {
@@ -88,6 +122,7 @@ export default {
           collector.stop();
 
           const id = msg.author.id;
+
           const prev = gameState.scores.get(id) || {
             name: msg.author.username,
             points: 0,
@@ -102,10 +137,11 @@ export default {
         }
       });
 
-      await new Promise((r) => collector.on("end", r));
+      await new Promise((resolve) => collector.on("end", resolve));
 
       if (!solved) {
         gameState.lossCount++;
+
         await interaction.channel.send(
           `⏰ Time’s up!\n` +
             `✅ Answer: **${riddle.answers[0].toUpperCase()}**\n` +
@@ -116,14 +152,34 @@ export default {
       await new Promise((r) => setTimeout(r, 2500));
     }
 
+    /* ---------------- GAME END ---------------- */
+
     activeRiddleGames.delete(channelId);
 
-    await interaction.channel.send({
-      embeds: [
-        new EmbedBuilder()
-          .setTitle("🏆 GAME OVER")
-          .setDescription("Thanks for playing!"),
-      ],
-    });
+    const sorted = [...gameState.scores.values()].sort(
+      (a, b) => b.points - a.points,
+    );
+
+    let board = "";
+
+    if (sorted.length === 0) {
+      board = "No one scored this time.";
+    } else {
+      board = sorted
+        .map(
+          (p, i) =>
+            `${String(i + 1).padEnd(3)} ${p.name.padEnd(15)} ${p.points} pts`,
+        )
+        .join("\n");
+    }
+
+    const embed = new EmbedBuilder()
+      .setTitle("🏆 GAME OVER")
+      .setColor(0xf0e000)
+      .setDescription(
+        `\`\`\`\nRank Player          Score\n---------------------------\n${board}\n\`\`\``,
+      );
+
+    await interaction.channel.send({ embeds: [embed] });
   },
 };

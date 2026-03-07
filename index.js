@@ -9,93 +9,11 @@ import { loadCommands } from "./handlers/commandLoader.js";
 import { activeGames } from "./commands/guess.js";
 import { handleC4Button } from "./commands/C4/C4.js";
 import { createCanvas, loadImage } from "canvas";
-import db from "./commands/Ai/db.js";
-import { getEmbedding } from "./commands/Ai/embeddings.js";
-import { cosineSimilarity } from "./commands/Ai/vectorSearch.js";
 
 dotenv.config();
 const { TOKEN } = process.env;
 
 const cooldown = new Set();
-
-/* ---------------- AI FUNCTIONS ---------------- */
-
-async function askAI(question) {
-  const context = await searchMemory(question);
-
-  const prompt = `
-You are NarutoBot, an AI assistant in a Discord server.
-
-Use the chat history to understand relationships and discussions.
-
-Chat history:
-${context}
-
-User question:
-${question}
-
-Answer naturally like a Discord user.
-`;
-
-  const response = await fetch("http://localhost:11434/api/generate", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: "llama3",
-      prompt,
-      stream: false,
-    }),
-  });
-
-  const data = await response.json();
-  return data.response;
-}
-
-async function storeMessage(user, content) {
-  const embedding = await getEmbedding(content);
-
-  db.run("INSERT INTO messages (user, content, embedding) VALUES (?, ?, ?)", [
-    user,
-    content,
-    JSON.stringify(embedding),
-  ]);
-}
-
-async function searchMemory(question) {
-  const queryVector = await getEmbedding(question);
-
-  return new Promise((resolve) => {
-    db.all("SELECT * FROM messages", [], (err, rows) => {
-      if (err) {
-        console.error("Memory search error:", err);
-        return resolve("");
-      }
-
-      if (!rows || rows.length === 0) {
-        return resolve("");
-      }
-
-      const scored = rows.map((row) => {
-        const emb = JSON.parse(row.embedding);
-
-        const score = cosineSimilarity(queryVector, emb);
-
-        return {
-          text: `${row.user}: ${row.content}`,
-          score,
-        };
-      });
-
-      scored.sort((a, b) => b.score - a.score);
-
-      const top = scored.slice(0, 5).map((x) => x.text);
-
-      resolve(top.join("\n"));
-    });
-  });
-}
 
 /* ---------------- AVATAR COMBINER ---------------- */
 
@@ -190,65 +108,6 @@ client.on("interactionCreate", async (interaction) => {
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot || !message.guild) return;
-
-  /* STORE CHAT MEMORY */
-
-  if (
-    !message.content.startsWith("?") &&
-    !/\bnaruto\b/i.test(message.content) &&
-    message.content.length > 5 &&
-    message.content.length < 200
-  ) {
-    await storeMessage(message.author.username, message.content);
-  }
-
-  /* REPLY TO BOT */
-
-  if (message.reference) {
-    const repliedMessage = await message.fetchReference().catch(() => null);
-
-    if (repliedMessage && repliedMessage.author.id === client.user.id) {
-      if (cooldown.has(message.author.id)) return;
-
-      cooldown.add(message.author.id);
-      setTimeout(() => cooldown.delete(message.author.id), 5000);
-
-      await message.channel.sendTyping();
-
-      try {
-        const reply = await askAI(message.content);
-
-        return message.reply(reply.slice(0, 2000));
-      } catch (err) {
-        console.error(err);
-
-        return message.reply("❌ AI failed to respond.");
-      }
-    }
-  }
-  
-  /* NARUTO TRIGGER */
-
-  if (/\bnaruto\b/i.test(message.content)) {
-    if (cooldown.has(message.author.id)) return;
-
-    cooldown.add(message.author.id);
-    setTimeout(() => cooldown.delete(message.author.id), 5000);
-
-    const prompt = message.content.replace(/\bnaruto\b/gi, "").trim();
-
-    if (!prompt) return;
-
-    await message.channel.sendTyping();
-
-    try {
-      const reply = await askAI(prompt);
-      return message.reply(reply.slice(0, 2000));
-    } catch (err) {
-      console.error(err);
-      return message.reply("❌ AI failed to respond.");
-    }
-  }
 
   /* ---------- GUESS GAME ---------- */
 
